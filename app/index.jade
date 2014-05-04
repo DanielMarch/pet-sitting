@@ -2,10 +2,23 @@ doctype html
 html(lang='en')
   head
     meta(charset='utf-8')
-    title JS++
+    title Detainee Management System
     link(rel='stylesheet', href='./css/app.css')
   body
-    h1 JS++
+    #banner
+      h1 Detainee Management System
+
+    #controls
+      select#species
+        option(value='alqueda.jpg') Al Qaeda Operative
+        option(value='chechnyan.jpg') Chechan Rebel
+        option(value='taliban.jpg') Taliban Facilitator
+        option(value='terrorist.jpg') Generic Terrorist
+      input#name(type='text' placeholder='Code Name')
+      input#age(type='text' placeholder='Age')
+      button#add Manage
+
+    #pets
 
     script(src='./js/vendor/traceur.js')
     script(src='./js/vendor/experimental.js')
@@ -13,4 +26,6 @@ html(lang='en')
     script(src='./js/vendor/lodash-2.4.1.js')
     script(src='./js/vendor/moment-2.6.0.js')
     script(src='./js/es5/main.js')
+    script(src='./js/es6/pet.js')
+    script(src='./js/es6/database.js')
     script(src='./js/es6/main.js')
